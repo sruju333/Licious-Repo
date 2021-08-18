@@ -1,4 +1,4 @@
-package com.licious.practice.deptemploy.Emp;
+package com.licious.practice.deptemploy.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.licious.practice.deptemploy.Dept.Dept;
+import com.licious.practice.deptemploy.model.Dept;
+import com.licious.practice.deptemploy.model.Emp;
+import com.licious.practice.deptemploy.service.EmpService;
 
 @RestController
 public class EmpController {

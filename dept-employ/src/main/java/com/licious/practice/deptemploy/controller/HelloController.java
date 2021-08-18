@@ -1,4 +1,4 @@
-package com.licious.practice.deptemploy.hello;
+package com.licious.practice.deptemploy.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

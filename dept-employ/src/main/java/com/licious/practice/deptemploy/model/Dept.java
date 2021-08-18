@@ -1,4 +1,4 @@
-package com.licious.practice.deptemploy.Dept;
+package com.licious.practice.deptemploy.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

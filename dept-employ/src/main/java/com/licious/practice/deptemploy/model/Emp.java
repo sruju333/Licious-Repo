@@ -1,10 +1,8 @@
-package com.licious.practice.deptemploy.Emp;
+package com.licious.practice.deptemploy.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-
-import com.licious.practice.deptemploy.Dept.Dept;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
