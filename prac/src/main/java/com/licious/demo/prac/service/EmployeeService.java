@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.licious.demo.prac.custom.exception.BusinessException;
+import com.licious.demo.prac.custom.exception.EmptyInputException;
 import com.licious.demo.prac.entity.Employee;
 import com.licious.demo.prac.repository.EmployeeRepository;
 
@@ -23,7 +24,7 @@ public class EmployeeService implements EmployeeServiceInterface{
 	@Override
 	public Employee addEmployee(Employee employee) {
 			if(employee.getName().isEmpty() || employee.getName().length()==0) {
-				throw new BusinessException("601", "Please send proper name, it's blank.");
+				throw new EmptyInputException("601", "Input fields are empty.");
 			}
 		try {
 			Employee savedemployee = employeeRepository.save(employee);
