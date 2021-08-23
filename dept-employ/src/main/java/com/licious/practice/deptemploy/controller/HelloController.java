@@ -19,8 +19,14 @@ public class HelloController {
 		return new ResponseEntity<>("This is the Main Page!", headers, HttpStatus.OK);
 	}
 	
+	@RequestMapping("/hello/err")
+	public String sayHi() throws CustomException {
+		throw new CustomException();
+		
+	}
+	
 	@RequestMapping("/hello")
-	public String sayHi() {
+	public String sayHello() {
 		return "Hello, Welcome to Dept-Employ SpringBoot App!";
 	}
 	
